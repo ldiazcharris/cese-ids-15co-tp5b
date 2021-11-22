@@ -29,6 +29,12 @@ extern "C" {
 
 /*=====[Definitions of public data types]====================================*/
 
+/**
+ * @brief 
+ *Estructura para la creación del tipo de dato alumnos, que básicamente será la 
+ *La plantilla sobre la que se introducrián los datos de los alumnos.
+*/
+
 typedef struct alumno_s {
     char apellidos[30];
     char nombres[30];
@@ -39,8 +45,27 @@ typedef struct alumno_s {
 
 /*=====[Prototypes (declarations) of public functions]=======================*/
 
+/**
+ * @brief Esta función permite mostrar por consola los datos de un alumno
+ * según se requiera.
+ * Los parámetros de entrada a esta fucnión son:
+ * @param cadena: puntero a variable que almacena tempralmente los datos para ser serializados
+ * @param espacio: el tamaño de la cadena
+ * @param alumno: la estructura alumno que se desea serializar
+ * @return true 
+ * @return false 
+ */
 bool SerializarAlumno(char * cadena, size_t espacio, const alumno_t alumno);
 
+/**
+ * @brief Esta función permite mostrar por consola los datos de todos los alumnos 
+ * según se requiera.
+ * Los parámetros de entrada a esta fucnión son: 
+ * @param cadena 
+ * @param espacio 
+ * @return true 
+ * @return false 
+ */
 bool SerializarAlumnos(char * cadena, size_t espacio);
 
 /*=====[Prototypes (declarations) of public interrupt functions]=============*/

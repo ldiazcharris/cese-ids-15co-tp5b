@@ -24,25 +24,40 @@
 /*=====[Definitions of external public global variables]=====================*/
 
 /*=====[Definitions of public global variables]==============================*/
-
+/**
+ * @brief Constante de tipo alumno_s con los datos del alumno Esteban Volentini
+ * 
+ */
 static const struct alumno_s ESTEBAN_VOLENTINI = {
     .apellidos = "VOLENTINI",
     .nombres = "Esteban Daniel",
     .documento = "23.517.968",
 };
 
+/**
+ * @brief Constante de tipo alumno_s con los datos del alumno alejandro Permingeat
+ * 
+ */
 static const struct alumno_s ALEJANDRO_PERMINGEAT = {
     .apellidos = "PERMINGEAT",
     .nombres = "Alejandro",
     .documento = "99.999.999",
 };
 
+/**
+ * @brief Constante de tipo alumno_s con los datos del alumno Luis David Díaz
+ * 
+ */
 static const struct alumno_s LUIS_DIAZ = {
     .apellidos = "DIAZ",
     .nombres = "LUIS DAVID",
     .documento = "1.043.875.625",
 };
 
+/**
+ * @brief Constante de tipo alumno_t con la lista de alumnos ingresados
+ * 
+ */
 const alumno_t ALUMNOS[] = {
     &ESTEBAN_VOLENTINI,
     &ALEJANDRO_PERMINGEAT,
